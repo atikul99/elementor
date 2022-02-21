@@ -1,6 +1,12 @@
 <?php
 
+// Normal Condition
 
+	'condition'=>[
+		'select_style'=> 'three',
+	],
+
+// Multiple Condition
 
 	'conditions' => [
 	    'relation' => 'or',
