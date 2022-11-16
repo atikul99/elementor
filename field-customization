@@ -1,0 +1,21 @@
+// Background Field:
+
+			$this->add_group_control(
+				\Elementor\Group_Control_Background::get_type(),
+				[
+					'name' => 'subtitle_color',
+					'label' => esc_html__( 'Background', 'dreamit-elementor-extension' ),
+					'types' => [ 'classic', 'gradient' ],
+					'fields_options' => [
+						'background' => [
+							'label' => 'Color'
+						],
+						'color' => [
+							'selectors' => [
+								'{{SELECTOR}}' => 'color: {{VALUE}};',
+							],
+						]
+					],
+					'selector' => '{{WRAPPER}} .section-title .subtitle',
+				]
+			);
